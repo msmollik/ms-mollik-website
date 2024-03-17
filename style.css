@@ -52,8 +52,9 @@
 .content {
   width: 100%;
   position: absolute;
-  top: 27%;
-  transform: translateY(-50%);
+  top: 0;
+  left:0;
+  transform: translate(-50%,-50%);
   text-align: center;
   color: white;
 }
