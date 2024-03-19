@@ -52,7 +52,7 @@
 .content {
   width: 100%;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left:25%
   transform: translate(-50%,-50%);
   text-align: center;
@@ -60,7 +60,7 @@
 }
 .content h1 {
   font-size: 60px;
-  margin-top: 80px;
+  margin-top: 60px;
   line-height: 25px;
   text-shadow: 0 5px 5px rgba(174, 9, 9, 0.573);
 }
