@@ -6,46 +6,75 @@
 .banner {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-color: linear-gradient(white, red);
   background-size: cover;
   background-position: center;
 }
 .navbar {
   width: 85%;
+  height: fit-content;
   margin: auto;
-  padding: 35px 0;
+  padding: 25px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .logo {
-  width: auto;
+  height: 100px;
+  width: fit-content;
   cursor: pointer;
+  padding: 5px;
   border-radius: 5px;
+  box-shadow: -2px -2px 2px 2px rgb(212, 35, 94,0.200);
 }
 .navbar ul li {
   list-style: none;
-  background: white;
+  background: rgb(226, 63, 126);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px rgba(158, 49, 109, 0.400);
+}
+.navbar ul li.active{
+  list-style: none;
+  background: rgb(80, 182, 185);
   padding: 5px 10px;
   border-radius: 5px;
   display: inline-block;
   margin: 0 20px;
   position: relative;
 }
+.navbar ul li.active::after{
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: rgb(80, 182, 185);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover {
+  background: rgb(80, 182, 185);
+  transition: 300ms ease-in-out;
+}
 .navbar ul li a {
   text-decoration: none;
-  color: rgb(38, 36, 11);
+  color: white;
   font-weight: bold;
   font-size: 20px;
 }
 .navbar ul li a:hover{
-  color: rgb(13, 118, 231);
+  color: white;
 }
 .navbar ul li::after {
   content: "";
   height: 3px;
   width: 0;
-  background-color: rgb(241, 234, 234);
+  background-color: rgb(80, 182, 185);
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -55,40 +84,48 @@
   width: 100%;
 }
 .content {
-  width: 100%;
+  width: fit-content;
   text-align: center;
-  color: white;
+  color: rgb(38, 65, 124);
 }
 .content h1 {
-  font-size: 60px;
+  font-size: 35px;
   margin-top: 30px;
-  text-shadow: 0 5px 5px rgba(174, 9, 9, 0.573);
+  line-height: 15px;
+  color: rgb(12, 69, 71);
+  text-shadow: 0 5px 5px rgba(158, 49, 109, 0.200);
+}
+.content h1 b{
+  color: rgb(212, 35, 94);
+  font-family: 'Courier New', Courier, monospace;
 }
 .content p {
   margin: 20px auto;
   font-size: 20px;
   font-weight: 100;
-  line-height: 25px;
-  text-shadow: 0 5px 5px rgba(174, 9, 9, 0.573);
+  line-height: 20px;
+  color: rgb(80, 182, 185);
+
 }
-button {
+.btn-style button {
   width: fit-content;
   padding: 10px 20px;
   text-align: center;
   border-radius: 25px;
   font-weight: bold;
-  font-size: 20px;
-  border: 2px solid rgb(251, 251, 251);
+  font-size: 16px;
+  border: 2px solid  rgb(226, 63, 126);
   background: transparent;
-  color: black;
+  color: rgb(226, 63, 126);
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
-span {
-  background: red;
+.btn-style span {
+  background: rgb(80, 182, 185);
   height: 100%;
   width: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 25px;
   position: absolute;
   left: 0;
@@ -96,20 +133,46 @@ span {
   z-index: -1;
   transition: 0.5s;
 }
-button:hover span {
+.btn-style button:hover span {
   width: 100%;
 }
-button:hover {
+.btn-style button:hover {
   border: none;
+  color: rgb(240, 237, 238);
 }
-button a {
-  color: white;
+.btn-style button a {
+  color: rgb(226, 63, 126);
   text-decoration: none;
 }
+.btn-style button a:hover{
+  color: #fff;
+}
+.sidebar {
+  width: 35%;
+  background-color: rgb(250,250,250);
+  padding: 20px;
+  position: fixed;
+  left: 10px;
+  top: 25%;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(158, 49, 109, 0.400);
+}
+.contact-info {
+  width: 50%;
+  background-color: rgb(250, 250, 250);
+  padding: 20px;
+  position: fixed;
+  left: 10px;
+  bottom: 20%;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(158, 49, 109, 0.400);
+  
+}
 footer {
-  background-color: #333;
+  background-color: rgb(226, 63, 126);
   color: #fff;
   text-align: center;
+  font-weight: 600;
   padding: 1em;
   position: fixed;
   bottom: 0;
