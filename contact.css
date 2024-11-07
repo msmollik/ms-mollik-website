@@ -1,50 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "poppins", sans-serif;
-}
-.navbar {
-  width: 85%;
-  height: 100px;
-  margin: auto;
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo {
-  width: auto;
-  cursor: pointer;
-}
-.navbar ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-  position: relative;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-.navbar ul li::after {
-  content: "";
-  height: 3px;
-  width: 0;
-  background-color: red;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
-}
-.navbar ul li:hover::after {
-  width: 100%;
-}
+
 .container {
   width: 100%;
-  height: 80vh;
-  background: #0c216e;
+  height: 70vh;
+  background: rgb(80, 182, 185);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,37 +17,44 @@ form {
   border-radius: 10px;
 }
 form h3 {
-  color: #555;
-  font-weight: 800;
-  margin-bottom: 20px;
+  font-size: 24px;
+  color: rgb(80, 182, 185);
+  font-weight: 600;
+  text-align: center;
+  font-family: monospace;
+  margin-bottom: 10px;
 }
 form input,
 form select,
 form textarea {
-  border: 1px solid rgb(194, 132, 132);
-  margin: 10px 0;
+  border: 1px solid rgb(226, 63, 126);
+  margin: 5px 0;
   padding: 10px;
   outline: none;
-  background: #f5f5f5;
-  font-size: 16px;
+  font-family: monospace !important;;
+  background-color: linear-gradient(white, red);
+  font-size: 14px;
+  font-weight: 600;
   border-radius: 6px;
 }
 form button {
-  padding: 15px;
-  background: #ff5361;
+  padding: 10px;
+  background: rgb(226, 63, 126);
   color: #fff;
   font-size: 18px;
-  border: 1px solid rgb(194, 132, 132);
+  font-weight: bold;
+  border: none !important;;
   outline: none;
   cursor: pointer;
   width: 150px;
-  margin: 20px auto 0;
+  margin: 10px auto 0;
   border-radius: 30px;
 }
 footer {
   background-color: #fff;
   color: #333;
   text-align: center;
+  font-weight: bold;
   padding: 1em;
   position:absolute;
   bottom: 0;
