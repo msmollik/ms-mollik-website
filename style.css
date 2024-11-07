@@ -25,7 +25,7 @@
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
-  box-shadow: -2px -2px 2px 2px rgb(212, 35, 94,0.200);
+  box-shadow: -2px -2px 2px 2px rgb(212, 35, 94,0.100);
 }
 .navbar ul li {
   list-style: none;
